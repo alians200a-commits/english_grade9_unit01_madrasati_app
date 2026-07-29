@@ -1,0 +1,1147 @@
+:root{--navy:#3e176d;--primary:#5b2596;--primary2:#7641b4;--cyan:#7641b4;--soft:#ece8fb;--line:#dcd5ef;--text:#202433;--muted:#697087;--gold:#a56b00;--gold-soft:#fff5d8;--green:#11785a;--green-soft:#eefbf6;--danger:#b42318;--danger-soft:#fff0ef;--shadow:0 15px 42px rgba(62,23,109,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:#f6f4ff}body{margin:0;background:radial-gradient(circle at top right,#eee9ff 0,#faf9ff 38%,#f6f4ff 100%);color:var(--text);font-family:"Cairo",Tahoma,Arial,sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);color:var(--text);border-bottom:1px solid var(--line);backdrop-filter:blur(12px);box-shadow:0 2px 12px rgba(62,23,109,.08)}.topbar-inner{width:min(1180px,calc(100% - 28px));margin:auto;min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;font-weight:950;font-size:24px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}.brand-copy{font-weight:900;line-height:1.25;color:var(--primary)}.brand-copy small{display:block;font-size:11px;color:var(--muted);margin-top:3px}.nav{display:flex;gap:6px}.nav button{border:0;background:transparent;color:var(--muted);border-radius:12px;padding:10px 14px;font-weight:800}.nav button.active,.nav button:hover{background:var(--soft);color:var(--primary)}.page{width:min(1180px,calc(100% - 28px));margin:auto;padding:28px 0 52px}.hero{background:linear-gradient(135deg,var(--primary),var(--navy) 60%,var(--primary2));color:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;inset-inline-end:-85px;inset-block-start:-90px;width:280px;height:280px;border-radius:50%;border:45px solid rgba(255,255,255,.07)}.hero-kicker{display:inline-block;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:850}.hero h1{font-size:42px;margin:16px 0 10px}.hero p{max-width:780px;margin:0;color:#f2edff;line-height:1.9}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.stats>div,.lesson-card,.filters,.question-card,.student-summary,.model-answer,.report-table,.empty{box-shadow:0 8px 25px rgba(62,23,109,.06)}.stats>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;text-align:center}.stats strong{display:block;font-size:30px;color:var(--primary)}.stats span{color:var(--muted);font-size:13px;font-weight:800}.section-head{display:flex;align-items:end;justify-content:space-between;margin:34px 0 14px}.section-head h2{margin:0;font-size:27px}.section-head p{margin:4px 0 0;color:var(--muted)}.lessons-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.lesson-card{background:#fff;border:1px solid var(--line);border-radius:23px;padding:19px;display:grid;gap:14px;min-width:0}.lesson-index{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--primary);font-weight:950}.section-name{font-size:12px;color:var(--primary2);font-weight:900}.lesson-card h3{font-size:17px;line-height:1.7;margin:2px 0 0}.lesson-counts{display:flex;gap:7px;flex-wrap:wrap}.count-chip{font-size:11px;font-weight:900;border-radius:999px;padding:5px 9px}.count-chip.source{background:#f1edff;color:var(--primary)}.count-chip.enrichment{background:var(--gold-soft);color:#855700}.lesson-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lesson-actions button,.bank-tabs button{border:1px solid #c8b7e8;background:#f1edff;color:var(--primary);border-radius:13px;padding:11px;font-weight:900}.lesson-actions button.enrichment,.bank-tabs button.enrichment{border-color:#ead38f;background:var(--gold-soft);color:#865a00}.filters{background:#fff;border:1px solid var(--line);border-radius:24px;padding:17px}.bank-tabs{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}.bank-tabs button.active{background:var(--primary);border-color:var(--primary);color:#fff}.bank-tabs button.enrichment.active{background:#a66d00;border-color:#a66d00}.filter-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:14px;padding:0 13px;background:#fff}.search input{border:0;outline:0;width:100%;min-height:48px}.filters select{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:14px;padding:0 12px;min-height:48px;outline:0}.status-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px}.status-row strong{font-size:13px;color:var(--muted)}.status-pills{display:flex;gap:7px;flex-wrap:wrap}.status-pills button{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:7px 12px;font-weight:850}.status-pills button.active{background:var(--primary);border-color:var(--primary);color:#fff}.question-nav{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 10px}.question-nav>strong{color:var(--muted);font-size:13px}.number-pager{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.number-pager button{width:38px;height:38px;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:11px;font-weight:900;font-variant-numeric:tabular-nums}.number-pager button.attempted{box-shadow:inset 0 -4px 0 #7fd5c2}.number-pager button.active{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:none}.question-card{scroll-margin-top:96px;background:#fff;border:1px solid var(--line);border-radius:26px;padding:25px;overflow:hidden}.question-head{display:flex;align-items:center;justify-content:space-between}.q-number{font-weight:950;color:var(--primary);font-size:18px}.q-counter{color:var(--muted);font-size:12px;font-weight:850}.meta-row{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0 18px}.meta-chip{padding:6px 9px;border-radius:9px;background:#f4f7fa;border:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:850}.meta-chip.source{background:#f1edff;color:var(--primary);border-color:#c8b7e8}.meta-chip.enrichment{background:var(--gold-soft);color:#825600}.meta-chip.type{background:var(--soft);color:var(--primary)}.question-card>h2{font-size:23px;line-height:2;margin:14px 0 20px;padding-bottom:17px;border-bottom:1px solid var(--line)}.student-input textarea,.student-input input[type=text],.student-input input[inputmode=decimal]{width:100%;border:1px solid var(--line);background:#fff;border-radius:15px;padding:13px 14px;outline:0;color:var(--text)}.student-input textarea{min-height:145px;resize:vertical;line-height:1.8}.student-input input:focus,.student-input textarea:focus{border-color:var(--primary2);box-shadow:0 0 0 3px rgba(91,37,150,.10)}.choice-list{display:grid;gap:10px}.choice-btn{display:flex;align-items:center;gap:12px;width:100%;min-height:54px;border:1px solid var(--line);background:#fff;border-radius:15px;padding:12px 14px;text-align:start;color:var(--text);font-weight:800}.choice-btn:before{content:"";width:20px;height:20px;border:2px solid #b7a8d1;border-radius:50%;flex:0 0 auto}.choice-btn small{margin-inline-start:auto;background:#f3f1f8;color:var(--muted);border-radius:999px;padding:3px 8px}.choice-btn.selected{border-color:var(--primary2);background:#f1edff;color:var(--primary)}.choice-btn.selected:before{border:6px solid var(--primary2)}.choice-btn.selected small{background:#fff;color:var(--primary)}.branch-grid,.blank-grid,.figure-fields{display:grid;gap:12px}.field-card,.blank-grid label,.figure-fields label,.work-area{display:grid;gap:7px}.field-card>span,.blank-grid label>span,.figure-fields label>span,.work-area>span{font-size:13px;font-weight:900;color:var(--muted)}.table-wrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:16px}.comparison-table{width:100%;border-collapse:collapse;min-width:680px}.comparison-table th,.comparison-table td{padding:12px;border-block-end:1px solid var(--line);border-inline-end:1px solid var(--line);vertical-align:top;line-height:1.8}.comparison-table th{background:#f1edff;color:var(--primary);font-weight:950}.comparison-table tr:last-child td{border-block-end:0}.comparison-table textarea{min-height:90px!important}.criterion{font-weight:900;background:#fcfbff}.correct-error-prompt{display:grid;gap:14px;margin-bottom:18px}.correct-error-prompt h2{font-size:18px;margin:0;padding:12px 15px;border:1px solid #c8b7e8;border-radius:14px;background:#f1edff;color:var(--primary)}.correct-error-prompt p{font-size:21px;line-height:2;margin:0;padding:17px;border:1px solid var(--line);border-radius:15px}.fixed-part{text-decoration-line:underline;text-decoration-thickness:2px;text-underline-offset:5px;font-weight:900}.numeric-attempt{display:grid;gap:15px}.numeric-branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.numeric-branch{border:1px solid var(--line);border-radius:17px;padding:14px;background:#fcfbff}.numeric-branch h3{margin:0 0 10px;font-size:14px;line-height:1.7;color:var(--primary)}.numeric-row{display:grid;grid-template-columns:1fr;gap:8px;align-items:center}.numeric-row input{text-align:center;font-variant-numeric:tabular-nums}.unit{min-width:60px;min-height:48px;display:grid;place-items:center;padding:0 10px;border:1px solid var(--line);border-radius:13px;background:#f5f2fb;font-weight:900;white-space:nowrap}.work-area textarea{min-height:105px}.asset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0 20px}.question-figure,.model-figure{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:16px}.media-box{display:grid;gap:10px}.upload-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:min(100%,360px);border:1px dashed #c8b7e8;background:#f1edff;color:var(--primary);border-radius:14px;padding:12px;font-weight:900}.upload-btn input{display:none}.media-limit{margin:0;color:var(--muted);font-size:12px}.preview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.preview-grid figure{margin:0;border:1px solid var(--line);border-radius:16px;padding:10px;background:#fff}.preview-grid img{display:block;width:100%;max-height:430px;object-fit:contain;border-radius:12px}.small-danger{margin-top:8px;border:0;background:var(--danger-soft);color:var(--danger);border-radius:10px;padding:8px 10px;font-weight:900}.drawing-attempt,.activity-attempt{display:grid;gap:12px}.drawing-guidance,.experiment-image-note,.activity-note{margin:0;padding:12px 14px;border:1px solid #eed795;background:var(--gold-soft);color:#805500;border-radius:13px;font-weight:850;line-height:1.8}.activity-fields{display:grid;gap:11px}.dynamic-field{border:1px solid var(--line);border-radius:15px;padding:11px;background:#fcfbff}.dynamic-field>div{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:8px}.dynamic-field button{border:0;background:var(--danger-soft);color:var(--danger);width:44px;border-radius:10px;font-size:21px}.add-field{justify-self:start;border:1px solid #c8b7e8;background:#f1edff;color:var(--primary);border-radius:12px;padding:10px 13px;font-weight:900}.reveal-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:min(100%,360px);margin:24px auto 0;border:1px solid var(--primary2);background:#fff;color:var(--primary);border-radius:15px;padding:13px;font-weight:950}.reveal-btn:not(:disabled):hover{background:#f1edff}.reveal-btn:disabled{opacity:.45;cursor:not-allowed}.answer-comparison{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}.student-summary,.model-answer{min-width:0;border:1px solid var(--line);border-radius:18px;padding:17px;background:#fff}.student-summary{border-color:#d9ceef;background:#faf8ff}.model-answer{border-color:#bfe7d8;background:var(--green-soft)}.answer-title{font-weight:950;color:var(--primary);margin-bottom:10px}.model-answer .answer-title{color:var(--green)}.student-summary p,.answer-text{line-height:1.95;white-space:normal;overflow-wrap:anywhere}.student-summary h4{margin:14px 0 4px;color:var(--muted)}.source-note{padding:11px;background:#fff7dc;border:1px solid #efd997;border-radius:12px;color:#7b5500}.math-isolate{direction:ltr;unicode-bidi:isolate;display:inline-block;max-width:100%}.math-display{display:block;overflow-x:auto;overflow-y:hidden;padding:5px 0}.number-isolate{direction:ltr;unicode-bidi:isolate;white-space:nowrap}.mixed-math{direction:ltr;unicode-bidi:isolate;display:flex;align-items:center;justify-content:center;gap:.45rem;flex-wrap:wrap;max-width:100%}.arabic-math-text{direction:rtl;unicode-bidi:isolate;font-family:"Cairo",Tahoma,Arial,sans-serif;font-weight:800;color:inherit;line-height:1.8}.rating{margin-top:17px;padding-top:15px;border-top:1px solid var(--line)}.rating h3{font-size:14px;color:var(--muted);margin:0 0 10px}.rating>div{display:flex;gap:7px;flex-wrap:wrap}.rating button{width:40px;height:40px;border:1px solid #c8b7e8;background:#fff;color:var(--primary);border-radius:11px;font-weight:900}.rating button.selected{background:var(--primary);border-color:var(--primary);color:#fff}.rating button:disabled:not(.selected){opacity:.45;cursor:not-allowed}.prev-next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.prev-next button{border:1px solid var(--line);background:#fff;color:var(--primary);border-radius:14px;padding:13px;font-weight:900}.prev-next button:last-child{background:var(--primary);border-color:var(--primary);color:#fff}.prev-next button:disabled{opacity:.42;cursor:not-allowed}.report-hero{background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff;border-radius:27px;padding:30px}.report-hero h1{margin:0 0 8px}.report-hero p{color:#eee6ff;margin:0}.report-table{margin-top:15px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px}.report-table table{width:100%;border-collapse:collapse}.report-table th,.report-table td{padding:12px;border-bottom:1px solid var(--line);text-align:start}.mini-progress{height:8px;border-radius:999px;background:#ece8f5;overflow:hidden}.mini-progress span{display:block;height:100%;background:var(--primary2)}.empty{margin-top:15px;border:1px solid var(--line);border-radius:20px;background:#fff;padding:30px;text-align:center;color:var(--muted)}
+@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.lessons-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:35px}.filter-grid{grid-template-columns:1fr 1fr}.search{grid-column:1/-1}}
+@media(max-width:640px){.topbar-inner{min-height:68px;align-items:center}.brand-mark{width:41px;height:41px;border-radius:13px}.brand-copy{font-size:14px}.brand-copy small{font-size:10px}.nav button{padding:9px 8px;font-size:12px}.page{width:min(100% - 18px,1180px);padding-top:16px}.hero{padding:27px 20px;border-radius:23px}.hero h1{font-size:29px}.stats>div{padding:14px 8px}.stats strong{font-size:24px}.lessons-grid{grid-template-columns:1fr}.lesson-card{padding:16px}.lesson-actions{grid-template-columns:1fr}.filters{padding:12px;border-radius:19px}.bank-tabs{grid-template-columns:1fr}.filter-grid{grid-template-columns:1fr}.search{grid-column:auto}.status-row{align-items:flex-start;flex-direction:column}.status-pills{width:100%}.status-pills button{flex:1 1 calc(50% - 7px)}.question-nav{align-items:flex-start;flex-direction:column}.number-pager{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px}.number-pager button{flex:0 0 38px}.question-card{padding:18px 14px;border-radius:21px;overflow-x:hidden}.question-card>h2{font-size:20px;overflow-wrap:anywhere}.question-head{align-items:flex-start}.meta-row>*{max-width:100%;white-space:normal}.numeric-branches{grid-template-columns:1fr}.prev-next{grid-template-columns:1fr}.comparison-table{min-width:600px}.answer-comparison{grid-template-columns:1fr}.asset-grid,.preview-grid{grid-template-columns:1fr}.rating button{width:37px;height:37px}.math-display{font-size:.92em}.correct-error-prompt p{font-size:18px}.lesson-counts{gap:5px}}
+
+/* Chemistry notation additions only — the interface remains the exact physics template. */
+.orbital-box{display:inline-flex;align-items:center;justify-content:center;min-width:2.15rem;height:2rem;margin:.12rem .14rem;padding:0 .35rem;border:2px solid var(--navy);border-radius:.25rem;background:#fff;font-weight:900;letter-spacing:.08em;vertical-align:middle}.chem-isolate{display:inline-block;unicode-bidi:isolate;font-weight:700}.answer-text{line-height:2}.asset-grid img{object-fit:contain;background:#fff}.fixed-part{direction:rtl;unicode-bidi:isolate}
+
+/* Structured chemistry presentation v2 — preserves source wording and fixes RTL/LTR notation. */
+.structured-prompt{margin:10px 0 22px;padding:20px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(180deg,#fff,#fcfbff);box-shadow:inset 4px 0 0 var(--primary2)}
+.prompt-lead{font-size:22px;font-weight:950;line-height:1.9;color:var(--text)}
+.structured-prompt.compact .prompt-lead{padding-bottom:13px;border-bottom:1px solid var(--line)}
+.prompt-body{margin-top:13px;font-size:18px;font-weight:800;line-height:2}
+.prompt-steps{list-style:none;margin:15px 0 0;padding:0;display:grid;gap:10px;counter-reset:none}
+.prompt-steps li{display:grid;grid-template-columns:38px minmax(0,1fr);gap:11px;align-items:start;padding:13px 14px;border:1px solid #e3dcf2;border-radius:14px;background:#fff;font-size:17px;font-weight:800;line-height:1.95}
+.prompt-step-number{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:var(--soft);color:var(--primary);font-weight:950;font-variant-numeric:tabular-nums}
+.chem-targets{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:15px}
+.chem-target{min-width:92px;min-height:58px;display:flex;align-items:center;justify-content:center;padding:10px 17px;border:1px solid #d4c7ea;border-radius:15px;background:#fff;color:var(--navy);font-size:25px;font-weight:950;box-shadow:0 5px 14px rgba(62,23,109,.06)}
+.atom-token{direction:ltr;unicode-bidi:isolate;display:inline-grid;grid-template-columns:auto auto;align-items:end;gap:2px;white-space:nowrap;vertical-align:middle;margin-inline:.12em;font-family:"Cairo",Tahoma,Arial,sans-serif}
+.atom-token sub{font-size:.52em;line-height:1;align-self:end;transform:translateY(-.08em);font-weight:900;color:var(--muted)}
+.atom-token strong{font-size:1em;line-height:1.15;font-weight:950;color:inherit}
+.electron-config,.chem-symbol{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap;font-family:"Cairo",Tahoma,Arial,sans-serif;font-weight:900}
+.structured-branches{gap:14px}
+.branch-answer-card{display:grid;gap:10px;padding:14px;border:1px solid #e1d8f0;border-radius:17px;background:#fcfbff}
+.branch-label{display:flex!important;align-items:flex-start;gap:9px;color:var(--text)!important;font-size:14px!important;line-height:1.8}
+.branch-label>b,.summary-branch-title>b{flex:0 0 31px;width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:var(--soft);color:var(--primary);font-weight:950;font-variant-numeric:tabular-nums}
+.branch-answer-card textarea{width:100%;min-height:112px;resize:vertical;border:1px solid var(--line);border-radius:14px;padding:13px 14px;background:#fff;color:var(--text);line-height:1.8;outline:0}.branch-answer-card textarea:focus{border-color:var(--primary2);box-shadow:0 0 0 3px rgba(91,37,150,.10)}
+.summary-branches{display:grid;gap:10px}
+.summary-branches>section{padding:11px;border:1px solid #e4dcf2;border-radius:13px;background:#fff}
+.summary-branch-title{display:flex;align-items:flex-start;gap:8px;font-weight:900;line-height:1.7;color:var(--text)}
+.summary-branches p{margin:8px 0 0}
+.model-answer-rows{display:grid;gap:9px}
+.model-answer-row{display:grid;grid-template-columns:31px minmax(0,1fr);gap:9px;align-items:start;padding:10px 11px;border:1px solid #cce9df;border-radius:12px;background:rgba(255,255,255,.78)}
+.model-answer-row>span{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:#dff5ed;color:var(--green);font-weight:950;font-variant-numeric:tabular-nums}
+.model-answer-row p{margin:0;line-height:1.95;overflow-wrap:anywhere}
+@media(max-width:640px){.structured-prompt{padding:15px 12px;border-radius:16px}.prompt-lead{font-size:19px}.prompt-steps li{grid-template-columns:34px minmax(0,1fr);padding:11px 10px;font-size:15px}.prompt-step-number{width:31px;height:31px}.chem-target{min-width:78px;min-height:52px;font-size:22px}.structured-field{padding:11px}.branch-label{font-size:13px!important}.model-answer-row{grid-template-columns:29px minmax(0,1fr)}}
+
+
+/* Chemistry bidi notation v3 */
+.atom-list{display:inline-flex;direction:rtl;unicode-bidi:isolate;align-items:baseline;gap:.28em;white-space:nowrap;margin-inline:.12em}
+.atom-connector{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"Cairo",Tahoma,Arial,sans-serif;font-weight:800;color:inherit}
+.atom-token{direction:ltr;unicode-bidi:isolate;display:inline-block;position:relative;min-width:1.35em;padding-inline-start:.42em;white-space:nowrap;vertical-align:baseline;margin-inline:.06em;font-family:"Cambria Math","Times New Roman",serif;font-weight:700}
+.atom-token sub{position:absolute;left:0;bottom:.02em;font-size:.52em;line-height:1;font-weight:700;color:var(--muted);transform:none}
+.atom-token strong{display:inline-block;font-family:"Cambria Math","Times New Roman",serif;font-size:1.08em;line-height:1;font-weight:700;letter-spacing:0;color:inherit}
+.electron-config-sequence{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap;font-family:"Cambria Math","Times New Roman",serif;font-weight:700;letter-spacing:.015em;margin-inline:.14em}
+.electron-config,.chem-symbol{font-family:"Cambria Math","Times New Roman",serif!important;font-weight:700!important;letter-spacing:0}
+.chem-targets{direction:rtl}
+.prompt-lead .atom-list,.prompt-body .atom-list{font-size:1.05em}
+@media(max-width:640px){.atom-list{gap:.2em}.electron-config-sequence{white-space:normal}}
+
+/* CHEMISTRY ATOMIC NOTATION V6 START */
+/* The real renderer uses .atom-list, .atom-connector and .atom-token. */
+.atom-list.atom-list-v6,
+.atom-list {
+  display: inline-flex !important;
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+  align-items: center !important;
+  gap: .34em !important;
+  white-space: nowrap !important;
+  margin-inline: .14em !important;
+  vertical-align: middle !important;
+}
+
+.atom-connector.atom-connector-v6,
+.atom-connector {
+  display: inline-grid !important;
+  place-items: center !important;
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+  min-width: .9em !important;
+  font-family: Tahoma, Arial, sans-serif !important;
+  font-size: 1em !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  color: #1d123f !important;
+  opacity: 1 !important;
+  letter-spacing: 0 !important;
+  transform: none !important;
+}
+
+.atom-token {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-grid !important;
+  grid-template-columns: auto auto !important;
+  grid-template-rows: auto auto !important;
+  align-items: center !important;
+  column-gap: .08em !important;
+  min-width: 1.75em !important;
+  padding: 0 !important;
+  margin-inline: .04em !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  position: static !important;
+  font-family: "Cambria Math", "Times New Roman", serif !important;
+  color: #1d123f !important;
+}
+
+.atom-token strong {
+  grid-column: 2 !important;
+  grid-row: 1 / span 2 !important;
+  align-self: center !important;
+  display: inline-block !important;
+  font-family: "Cambria Math", "Times New Roman", serif !important;
+  font-size: 1.14em !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  color: #1d123f !important;
+  opacity: 1 !important;
+  letter-spacing: 0 !important;
+}
+
+.atom-token sub {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  align-self: end !important;
+  justify-self: end !important;
+  position: static !important;
+  display: inline-block !important;
+  min-width: 1.15em !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: Tahoma, Arial, sans-serif !important;
+  font-size: .70em !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  color: #1d123f !important;
+  opacity: 1 !important;
+  filter: none !important;
+  text-shadow: none !important;
+  transform: translateY(.10em) !important;
+}
+
+/* Cards containing an isolated element use the same readable atomic number. */
+.chem-targets .atom-token,
+.prompt-lead .atom-token,
+.prompt-body .atom-token {
+  font-size: 1.06em !important;
+}
+
+.electron-config-sequence {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  font-family: "Cambria Math", "Times New Roman", serif !important;
+  font-weight: 700 !important;
+  color: #1d123f !important;
+}
+/* CHEMISTRY ATOMIC NOTATION V6 END */
+
+/* STRICT SOURCE PRESENTATION V3 START */
+.atom-separator{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:Cairo,Arial,sans-serif;font-weight:900;color:#1d123f;margin-inline:.12em}
+.atom-comparison{display:inline-flex;direction:ltr;unicode-bidi:isolate;align-items:flex-end;gap:.3em;white-space:nowrap;font-weight:900;color:#1d123f}
+.atom-comparison .comparison-operator{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-weight:900;font-size:1.05em;line-height:1.1;color:#1d123f}
+.lewis-grid{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;padding-top:14px;border-top:1px dashed #cfc4eb}
+.lewis-card{margin:0;min-width:116px;padding:12px 14px;border:1px solid #d8ccef;border-radius:16px;background:#fff;text-align:center}
+.lewis-card figcaption{margin-top:8px;font-size:.82rem;font-weight:800;color:#5b4872}
+.lewis-atom{position:relative;width:76px;height:68px;margin:auto;color:#1d123f;font-family:Georgia,"Times New Roman",serif;font-weight:900}
+.lewis-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:1.35rem}
+.lewis-center .atom-token{font-size:1em!important}
+.lewis-side{position:absolute;display:block;font-family:Arial,sans-serif;font-size:1.15rem;line-height:.65;letter-spacing:.02em;font-weight:900;color:#1d123f;white-space:pre}
+.lewis-top{top:0;left:50%;transform:translateX(-50%);letter-spacing:-.12em}
+.lewis-bottom{bottom:0;left:50%;transform:translateX(-50%);letter-spacing:-.12em}
+.lewis-right{right:2px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;letter-spacing:-.2em}
+.lewis-left{left:2px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;letter-spacing:-.2em}
+.model-answer-rows .atom-comparison{font-size:1.03em}
+/* STRICT SOURCE PRESENTATION V3 END */
+
+
+/* CHAPTER 2 STRICT INTEGRATION */
+.meta-chip.ministerial{background:#fff1d4;border-color:#e7bf62;color:#7a4c00;font-weight:900}
+.meta-chip.source-page{background:#eef8f6;border-color:#b8e1d9;color:#17695e}
+.multi-branch-choice{display:grid;gap:16px}
+.branch-choice-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fff}
+.branch-choice-title{display:flex;align-items:flex-start;gap:12px;font-weight:800;font-size:1.02rem;margin-bottom:12px}
+.branch-choice-title>b{display:grid;place-items:center;min-width:34px;height:34px;border-radius:11px;background:#efe7fb;color:var(--primary);font-weight:900}
+.model-branch-choices .source-note{margin-top:8px;padding:10px 12px;background:#f8f4ff;border-radius:10px}
+.chemical-equation,.electron-config-sequence,.chem-isolate,.chem-symbol{font-family:"Times New Roman",serif;font-weight:700}
+.activity-attempt .dynamic-field textarea{min-height:105px}
+@media(max-width:700px){.branch-choice-card{padding:12px}.branch-choice-title{font-size:.95rem}.meta-row{gap:6px}.meta-chip{font-size:.72rem}}
+
+.section-code{display:inline-block;unicode-bidi:isolate;font-family:Cairo,Arial,sans-serif;font-weight:900;direction:ltr}
+.chemical-equation{display:inline-block;direction:ltr;unicode-bidi:isolate;font-family:"Times New Roman",serif;font-size:1.08em;font-weight:700;white-space:nowrap;letter-spacing:.01em}
+
+/* EXHAUSTIVE CHEMISTRY FORMULA AND SOURCE-PRESENTATION AUDIT V4 */
+.chemical-formula,
+.temperature-token{
+  display:inline-block;
+  direction:ltr;
+  unicode-bidi:isolate;
+  white-space:nowrap;
+  font-family:"Cambria Math","Times New Roman",serif;
+  font-weight:700;
+  letter-spacing:0;
+  color:inherit;
+  margin-inline:.08em;
+}
+.chemical-formula{font-size:1.04em}
+.temperature-token{font-variant-numeric:tabular-nums}
+.chemical-word-equation{
+  display:inline-grid;
+  grid-template-columns:minmax(0,auto) auto minmax(0,auto);
+  align-items:center;
+  justify-content:start;
+  gap:.55em;
+  direction:ltr;
+  unicode-bidi:isolate;
+  max-width:100%;
+  padding-block:.08em;
+}
+.word-equation-side{
+  display:inline-block;
+  direction:rtl;
+  unicode-bidi:isolate;
+  text-align:right;
+  font-family:"Cairo",Tahoma,Arial,sans-serif;
+  font-weight:800;
+  white-space:normal;
+}
+.reaction-arrow{
+  display:inline-block;
+  direction:ltr;
+  unicode-bidi:isolate;
+  font-family:"Cambria Math","Times New Roman",serif;
+  font-size:1.25em;
+  line-height:1;
+  font-weight:700;
+  color:#1d123f;
+  white-space:nowrap;
+}
+.activity-model-grid{display:grid;gap:10px}
+.activity-model-grid>section{padding:12px;border:1px solid #cce9df;border-radius:13px;background:rgba(255,255,255,.82)}
+.activity-model-grid p{margin:8px 0 0;line-height:1.95}
+.comparison-table th .chemical-formula{color:inherit}
+@media(max-width:640px){
+  .chemical-word-equation{display:flex;flex-wrap:wrap;gap:.35em .5em}
+  .chemical-formula{font-size:1em}
+}
+
+/* FINAL MOBILE FILTER CONTAINMENT AUDIT FIX */
+.filter-grid > *{min-width:0}
+.search,.filters select{width:100%;min-width:0;max-width:100%}
+@media(max-width:640px){
+  html,body,#app{max-width:100%;overflow-x:hidden}
+  .filters,.filter-grid{min-width:0;max-width:100%}
+  .number-pager{direction:rtl;overscroll-behavior-inline:contain}
+}
+
+/* FINAL COMPARISON ANSWER LAYOUT AUDIT FIX */
+.answer-comparison.comparison-mode{grid-template-columns:1fr}
+.answer-comparison.comparison-mode .student-summary,
+.answer-comparison.comparison-mode .model-answer{width:100%}
+.answer-comparison.comparison-mode .table-wrap{overflow-x:auto}
+.answer-comparison.comparison-mode .comparison-table{min-width:680px}
+
+/* EQUATION BRANCH IMAGE UPLOAD V1 START */
+.equation-image-upload-grid{display:grid;gap:1rem}
+.equation-image-upload-card{border:1px solid var(--line,#ddd6f3);border-radius:18px;background:#fcfbff;padding:1rem;overflow:hidden}
+.equation-upload-title{margin-bottom:.85rem}
+.equation-upload-body{display:grid;gap:.65rem}
+.equation-image-upload-btn{width:max-content;max-width:100%}
+.equation-image-upload-btn input{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.equation-image-preview,.equation-image-summary-card{margin:0;display:grid;gap:.65rem}
+.equation-image-preview img,.equation-image-summary-card img,.student-equation-image img{display:block;width:100%;max-height:520px;object-fit:contain;border:1px solid var(--line,#ddd6f3);border-radius:14px;background:#fff}
+.equation-image-summary-grid,.equation-branch-comparison{display:grid;gap:1rem}
+.equation-image-summary-card,.equation-branch-result{border:1px solid var(--line,#ddd6f3);border-radius:16px;padding:1rem;background:#fff}
+.equation-result-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;margin-top:.85rem}
+.student-equation-image,.model-equation-answer{min-width:0;border:1px solid var(--line,#ddd6f3);border-radius:14px;padding:.9rem;background:#fff}
+.student-equation-image h4,.model-equation-answer h4{margin:0 0 .75rem;color:var(--primary,#5b2596)}
+.model-equation-answer p{margin:.35rem 0;font-size:1.05rem;line-height:1.85}
+@media(max-width:760px){.equation-result-columns{grid-template-columns:1fr}.equation-image-upload-card,.equation-image-summary-card,.equation-branch-result{padding:.75rem}.equation-image-upload-btn{width:100%;justify-content:center}}
+/* EQUATION BRANCH IMAGE UPLOAD V1 END */
+
+/* SAFE GLOBAL ARABIC RENDER V2 START */
+.source-page,.source-page-badge,.source-reference-badge,[data-source-page],[class*="source-page"]{display:none!important}
+
+.question-card>h2,.prompt-lead,.prompt-body,.correct-error-prompt p{
+  direction:rtl!important;
+  unicode-bidi:isolate!important;
+  text-align:right!important;
+}
+
+.answer-text,.student-summary p,.model-answer p,.source-note{
+  direction:rtl;
+  unicode-bidi:isolate;
+  text-align:right;
+}
+
+.arabic-parenthetical{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:baseline;
+  direction:ltr;
+  unicode-bidi:isolate;
+  white-space:nowrap;
+  margin-inline:.08em;
+}
+.arabic-parenthetical-text{
+  display:inline-block;
+  direction:rtl;
+  unicode-bidi:isolate;
+  font-family:inherit;
+}
+.parenthesis-mark{
+  display:inline-block;
+  direction:ltr;
+  unicode-bidi:isolate;
+  font-family:inherit;
+}
+
+.chemical-equation,.chemical-word-equation,.chemical-formula,.electron-config-sequence,.atom-token,.atom-list,.atom-comparison,.math-isolate{
+  unicode-bidi:isolate!important;
+}
+/* SAFE GLOBAL ARABIC RENDER V2 END */
+
+
+/* ENGLISH GRADE 9 GROUPED SOURCE INTEGRATION */
+.english-text{direction:ltr;unicode-bidi:isolate;display:inline;white-space:pre-wrap;overflow-wrap:anywhere;font-family:Arial,"Segoe UI",sans-serif}
+.english-question-prompt{direction:ltr!important;text-align:left!important;unicode-bidi:isolate!important;font-family:Arial,"Segoe UI",sans-serif}
+.word-bank{margin:0 0 18px;padding:14px 16px;border:1px solid #c8b7e8;border-radius:16px;background:#f7f3ff;text-align:left}
+.word-bank>strong{display:block;margin-bottom:10px;color:var(--primary)}
+.word-bank>div{display:flex;flex-wrap:wrap;gap:8px}
+.word-bank>div>span{padding:7px 11px;border:1px solid #d8ccef;border-radius:999px;background:#fff;font-weight:800}
+.source-passage{margin:0 0 20px;border:1px solid var(--line);border-radius:18px;background:#fcfbff;overflow:hidden}
+.source-passage summary{cursor:pointer;padding:13px 16px;background:#f1edff;color:var(--primary);font-weight:950}
+.source-passage>div{padding:16px 18px;text-align:left;font-family:Arial,"Segoe UI",sans-serif;line-height:1.9}
+.source-passage p{margin:0 0 14px}.source-passage p:last-child{margin-bottom:0}
+.english-group-branches{direction:ltr}
+.english-branch-card{direction:ltr;text-align:left;background:#fff}
+.english-branch-label{display:flex;align-items:flex-start;gap:12px;direction:ltr;text-align:left;font-family:Arial,"Segoe UI",sans-serif;font-weight:800;line-height:1.75}
+.english-branch-label>b{display:grid;place-items:center;min-width:35px;height:35px;border-radius:11px;background:#efe7fb;color:var(--primary);font-family:"Cairo",Arial,sans-serif;font-weight:950}
+.english-branch-card textarea,.english-branch-card input[type=text],.matching-field select{direction:ltr;text-align:left;font-family:Arial,"Segoe UI",sans-serif}
+.english-branch-card input[type=text]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:14px;padding:12px 14px;outline:0}
+.english-choice-list{direction:ltr}.english-choice-list .choice-btn{direction:ltr;text-align:left;font-family:Arial,"Segoe UI",sans-serif}
+.matching-field{display:grid;gap:8px}.matching-field>span{font-size:13px;font-weight:900;color:var(--muted)}
+.matching-field select{width:100%;min-height:50px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:0 13px;color:var(--text);outline:0}
+.group-answer-results{display:grid;gap:14px}
+.group-answer-card{display:grid;gap:12px;padding:15px;border:1px solid #e1d8f0;border-radius:18px;background:#fcfbff}
+.group-answer-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.group-answer-columns .student-summary,.group-answer-columns .model-answer{padding:14px}
+.group-answer-columns p{direction:ltr!important;text-align:left!important;unicode-bidi:isolate!important;margin:0;line-height:1.85;font-family:Arial,"Segoe UI",sans-serif;white-space:pre-wrap}
+@media(max-width:700px){.group-answer-columns{grid-template-columns:1fr}.word-bank{padding:12px}.source-passage>div{padding:14px}.english-branch-card{padding:12px}}
+
+/* ENGLISH_LTR_MATCHING_UI_V2 START */
+
+/* عنوان أي سؤال إنكليزي يبدأ من اليسار دائمًا */
+.question-card > h2.english-question-prompt {
+    display: block !important;
+    width: 100% !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.question-card > h2.english-question-prompt .english-text {
+    display: block !important;
+    width: 100% !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+}
+
+/* جميع الفروع والإجابات الإنكليزية تبدأ من اليسار */
+.student-input .english-group-branches,
+.student-input .english-branch-card,
+.student-input .english-branch-label,
+.student-input .english-choice-list,
+.student-input .matching-field {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+}
+
+.student-input .english-branch-card {
+    justify-items: stretch !important;
+}
+
+.student-input .english-branch-label {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.student-input .english-branch-label > span,
+.student-input .english-branch-label .english-text,
+.student-input .english-choice-list .choice-btn,
+.student-input .matching-field > span,
+.student-input .english-branch-card textarea,
+.student-input .english-branch-card input[type="text"],
+.student-input .matching-field select,
+.student-input .matching-field option {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    font-family: Arial, "Segoe UI", sans-serif !important;
+}
+
+.student-input .english-branch-card textarea,
+.student-input .english-branch-card input[type="text"],
+.student-input .matching-field select {
+    width: 100% !important;
+}
+
+.student-input .english-choice-list .choice-btn {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+.word-bank,
+.word-bank > div,
+.source-passage,
+.source-passage > div,
+.source-passage p {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+}
+
+/* الإجابة بعد إظهار الجواب النموذجي */
+.group-answer-card .english-branch-label,
+.group-answer-card .english-branch-label > span,
+.group-answer-columns p,
+.group-answer-columns .english-text {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+}
+
+/* صندوق عرض List A وList B */
+.matching-reference {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    margin: 0 0 22px;
+}
+
+.matching-reference-column {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #d9ceef;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 7px 20px rgba(62, 23, 109, 0.06);
+}
+
+.matching-reference-column h3 {
+    margin: 0;
+    padding: 13px 16px;
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--primary);
+    background: #f1edff;
+    border-bottom: 1px solid #d9ceef;
+}
+
+.matching-reference-column ol {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    display: grid;
+    gap: 9px;
+    direction: ltr !important;
+}
+
+.matching-reference-column li {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    padding: 10px 11px;
+    border: 1px solid #e5def1;
+    border-radius: 12px;
+    background: #fcfbff;
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-weight: 700;
+    line-height: 1.65;
+}
+
+.match-marker {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    direction: ltr !important;
+    border-radius: 9px;
+    background: #efe7fb;
+    color: var(--primary);
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-weight: 900;
+}
+
+.match-entry,
+.match-entry .english-text {
+    min-width: 0;
+    display: block !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    overflow-wrap: anywhere;
+}
+
+.matching-answer-heading {
+    width: 100%;
+    margin: 5px 0 14px;
+    padding: 11px 14px;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--primary);
+    background: #f7f3ff;
+    border-left: 4px solid var(--primary2);
+    border-radius: 10px;
+}
+
+.matching-field {
+    display: grid !important;
+    gap: 8px !important;
+}
+
+.matching-field > span {
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--muted);
+}
+
+.matching-field select {
+    min-height: 52px !important;
+    padding: 0 14px !important;
+    cursor: pointer;
+}
+
+.matching-field option:disabled {
+    color: #999999;
+    background: #eeeeee;
+}
+
+/* الهاتف */
+@media (max-width: 720px) {
+    .matching-reference {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .matching-reference-column li {
+        grid-template-columns: 34px minmax(0, 1fr);
+        padding: 9px;
+    }
+
+    .match-marker {
+        width: 30px;
+        height: 30px;
+    }
+
+    .matching-answer-heading {
+        font-size: 14px;
+    }
+}
+
+/* ENGLISH_LTR_MATCHING_UI_V2 END */
+
+/* REMOVE_ALL_ITALIC_TEXT_V1 START */
+
+/*
+ * يمنع ظهور أي نص مائل داخل الأسئلة أو الإجابات.
+ * يشمل:
+ * - نصوص النقاط.
+ * - تعليمات التحويل مثل (negative) و(question).
+ * - الاختيارات.
+ * - المطابقة.
+ * - الفراغات.
+ * - الإجابات النموذجية.
+ */
+
+.question-card,
+.question-card *,
+.student-input,
+.student-input *,
+.branch-answer-card,
+.branch-answer-card *,
+.group-answer-card,
+.group-answer-card *,
+.matching-reference,
+.matching-reference *,
+.word-bank,
+.word-bank *,
+.source-passage,
+.source-passage * {
+    font-style: normal !important;
+}
+
+/* إلغاء الميل من عناصر HTML المائلة نفسها */
+.question-card i,
+.question-card em,
+.question-card cite,
+.question-card var,
+.student-input i,
+.student-input em,
+.student-input cite,
+.student-input var,
+.group-answer-card i,
+.group-answer-card em,
+.group-answer-card cite,
+.group-answer-card var {
+    font-style: normal !important;
+}
+
+/* تعليمات السؤال بين الأقواس */
+.question-card .item-requirement,
+.question-card .item-requirement *,
+.question-card .english-item-prompt,
+.question-card .english-item-prompt *,
+.question-card .english-item-main,
+.question-card .english-item-main * {
+    font-style: normal !important;
+}
+
+/* حقول الكتابة والقوائم */
+.question-card input,
+.question-card textarea,
+.question-card select,
+.question-card option,
+.question-card button,
+.question-card input::placeholder,
+.question-card textarea::placeholder {
+    font-style: normal !important;
+}
+
+/* منع الميل على الهاتف أيضًا */
+@media (max-width: 720px) {
+    .question-card,
+    .question-card *,
+    .student-input,
+    .student-input *,
+    .branch-answer-card,
+    .branch-answer-card *,
+    .group-answer-card,
+    .group-answer-card * {
+        font-style: normal !important;
+    }
+}
+
+/* REMOVE_ALL_ITALIC_TEXT_V1 END */
+
+/* ENGLISH_ITEM_POINT_SIZE_V1 START */
+
+/* ==========================================================
+   الحجم العام لنصوص نقاط الأسئلة
+   ========================================================== */
+
+.question-card .branch-label,
+.question-card .english-branch-label {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+.question-card .branch-label > span,
+.question-card .english-branch-label > span,
+.question-card .english-branch-label .english-text,
+.question-card .english-item-main,
+.question-card .english-item-main .english-text {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+/* رقم كل نقطة داخل المربع البنفسجي */
+.question-card .branch-label > b,
+.question-card .english-branch-label > b {
+    min-width: 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+    flex: 0 0 36px !important;
+    font-size: 15px !important;
+    line-height: 1 !important;
+}
+
+/* ==========================================================
+   عرض الجملة وتعليمة التحويل
+   ========================================================== */
+
+.question-card .english-item-prompt {
+    display: inline !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    font-family: Arial, "Segoe UI", sans-serif !important;
+}
+
+.question-card .english-item-main {
+    display: inline !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+}
+
+/*
+ * تعليمات مثل:
+ * (negative)
+ * (question)
+ * (Make negative)
+ * (Past Continuous, Question)
+ */
+.question-card .item-requirement {
+    display: inline-block !important;
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    margin-left: 0.35em !important;
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    color: inherit !important;
+    vertical-align: baseline !important;
+}
+
+/* إلغاء أي تنسيق قديم يجعل التعليمة مائلة أو صغيرة */
+.question-card .english-branch-label em,
+.question-card .english-branch-label i,
+.question-card .english-item-prompt em,
+.question-card .english-item-prompt i {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    color: inherit !important;
+}
+
+/* ==========================================================
+   حقول وأزرار الإجابات
+   ========================================================== */
+
+.question-card .english-branch-card textarea,
+.question-card .english-branch-card input[type="text"],
+.question-card .matching-field select,
+.question-card .matching-field option,
+.question-card .matching-field > span,
+.question-card .english-choice-list .choice-btn,
+.question-card .english-choice-list .choice-btn span {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+}
+
+/* الكلمات داخل صندوق الكلمات */
+.question-card .word-bank > div > span {
+    font-size: 15px !important;
+}
+
+/* عناصر List A وList B في المطابقة */
+.question-card .matching-reference-column li,
+.question-card .matching-reference-column .match-entry,
+.question-card .matching-reference-column .english-text {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+/* نصوص الإجابة بعد إظهار الجواب النموذجي */
+.question-card .group-answer-card .branch-label,
+.question-card .group-answer-card .english-branch-label,
+.question-card .group-answer-columns p,
+.question-card .group-answer-columns .english-text {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+/* ==========================================================
+   منع تصغير النقاط على الهاتف
+   ========================================================== */
+
+@media (max-width: 640px) {
+    .question-card .branch-label,
+    .question-card .english-branch-label,
+    .question-card .branch-label > span,
+    .question-card .english-branch-label > span,
+    .question-card .english-branch-label .english-text,
+    .question-card .english-item-main,
+    .question-card .english-item-main .english-text,
+    .question-card .item-requirement,
+    .question-card .english-branch-label em,
+    .question-card .english-branch-label i {
+        font-size: 15px !important;
+        line-height: 1.75 !important;
+    }
+
+    .question-card .branch-label > b,
+    .question-card .english-branch-label > b {
+        min-width: 35px !important;
+        width: 35px !important;
+        height: 35px !important;
+        flex-basis: 35px !important;
+        font-size: 15px !important;
+    }
+
+    .question-card .english-branch-card textarea,
+    .question-card .english-branch-card input[type="text"],
+    .question-card .matching-field select,
+    .question-card .matching-field > span,
+    .question-card .english-choice-list .choice-btn,
+    .question-card .english-choice-list .choice-btn span,
+    .question-card .matching-reference-column li {
+        font-size: 15px !important;
+    }
+}
+
+/* ENGLISH_ITEM_POINT_SIZE_V1 END */
+
+/* STRICT_LITERAL_NO_ITALIC_V3 START */
+
+/*
+ * منع الخط المائل نهائيًا داخل بطاقة السؤال.
+ */
+.question-card,
+.question-card *,
+.question-card *::before,
+.question-card *::after {
+    font-style: normal !important;
+    font-synthesis-style: none !important;
+}
+
+/*
+ * نص كل فقرة من فروع السؤال.
+ */
+.question-card .strict-literal-english-prompt,
+.question-card .strict-literal-english-prompt *,
+.question-card .strict-non-italic-text,
+.question-card .strict-non-italic-text * {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere !important;
+
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 1.8 !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    transform: none !important;
+}
+
+/*
+ * حجم جميع نقاط الأسئلة.
+ */
+.question-card .branch-label,
+.question-card .english-branch-label,
+.question-card .branch-label > span,
+.question-card .english-branch-label > span,
+.question-card .english-item-prompt,
+.question-card .english-item-main,
+.question-card .item-requirement {
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    line-height: 1.8 !important;
+}
+
+/*
+ * إلغاء الميل من عناصر HTML المائلة نفسها.
+ */
+.question-card i,
+.question-card em,
+.question-card cite,
+.question-card var,
+.question-card i *,
+.question-card em *,
+.question-card cite *,
+.question-card var * {
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: inherit !important;
+    font-style: normal !important;
+    font-weight: inherit !important;
+    transform: none !important;
+}
+
+/*
+ * تعليمات السؤال بين الأقواس.
+ */
+.question-card .item-requirement,
+.question-card .item-requirement * {
+    display: inline !important;
+    margin-left: 0.35em !important;
+
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    color: inherit !important;
+}
+
+/*
+ * حقول الإجابة.
+ */
+.question-card input,
+.question-card textarea,
+.question-card select,
+.question-card option,
+.question-card button,
+.question-card input::placeholder,
+.question-card textarea::placeholder {
+    font-style: normal !important;
+}
+
+/*
+ * منع أي قاعدة قديمة من جعل آخر كلمة مائلة.
+ */
+.question-card .english-text,
+.question-card .english-text *,
+.question-card .english-branch-label,
+.question-card .english-branch-label *,
+.question-card .branch-answer-card,
+.question-card .branch-answer-card * {
+    font-style: normal !important;
+}
+
+/*
+ * الهاتف.
+ */
+@media (max-width: 720px) {
+    .question-card .strict-literal-english-prompt,
+    .question-card .strict-non-italic-text,
+    .question-card .branch-label,
+    .question-card .english-branch-label,
+    .question-card .branch-label > span,
+    .question-card .english-branch-label > span {
+        font-size: 15px !important;
+        font-style: normal !important;
+        line-height: 1.75 !important;
+    }
+}
+
+/* STRICT_LITERAL_NO_ITALIC_V3 END */
+
+/* ITALIC_TO_PARENTHESES_UI_V4 START */
+
+/*
+ * جميع نصوص نقاط الأسئلة مستقيمة وواضحة.
+ */
+.question-card .parentheses-prompt-text,
+.question-card .parentheses-prompt-text *,
+.question-card .italic-converted-to-parentheses,
+.question-card .strict-literal-english-prompt,
+.question-card .strict-non-italic-text,
+.question-card .english-item-prompt,
+.question-card .english-item-main,
+.question-card .item-requirement {
+    display: inline !important;
+    position: static !important;
+    float: none !important;
+
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-synthesis-style: none !important;
+
+    line-height: 1.75 !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+    text-decoration: none !important;
+}
+
+/*
+ * حاوية نص الفقرة.
+ */
+.question-card .english-branch-label > span.parentheses-prompt-text,
+.question-card .branch-label > span.parentheses-prompt-text {
+    display: block !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.75 !important;
+}
+
+/*
+ * ترتيب الرقم والنص.
+ */
+.question-card .english-branch-label,
+.question-card .branch-label {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    gap: 14px !important;
+
+    direction: ltr !important;
+    text-align: left !important;
+
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+}
+
+/*
+ * رقم الفقرة.
+ */
+.question-card .english-branch-label > b,
+.question-card .branch-label > b {
+    flex: 0 0 38px !important;
+
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 15px !important;
+    font-style: normal !important;
+    line-height: 1 !important;
+}
+
+/*
+ * منع الميل نهائيًا حتى لو بقي عنصر HTML مائل.
+ */
+.question-card i,
+.question-card em,
+.question-card cite,
+.question-card var,
+.question-card .italic,
+.question-card .italics,
+.question-card .font-italic {
+    display: inline !important;
+
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+
+    line-height: inherit !important;
+    letter-spacing: normal !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+/*
+ * إزالة أي تنسيق قديم كان يسبب تداخل PastContinuous.
+ */
+.question-card .strict-literal-english-prompt,
+.question-card .strict-non-italic-text,
+.question-card .english-item-prompt,
+.question-card .english-item-main,
+.question-card .item-requirement {
+    white-space: normal !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/*
+ * حقول الإجابة.
+ */
+.question-card textarea,
+.question-card input[type="text"],
+.question-card select,
+.question-card option,
+.question-card button,
+.question-card textarea::placeholder,
+.question-card input[type="text"]::placeholder {
+    font-family: Arial, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+}
+
+/*
+ * الهاتف.
+ */
+@media (max-width: 720px) {
+    .question-card .parentheses-prompt-text,
+    .question-card .parentheses-prompt-text *,
+    .question-card .italic-converted-to-parentheses,
+    .question-card .english-branch-label,
+    .question-card .branch-label {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .question-card .english-branch-label,
+    .question-card .branch-label {
+        gap: 10px !important;
+    }
+
+    .question-card .english-branch-label > b,
+    .question-card .branch-label > b {
+        flex-basis: 36px !important;
+        width: 36px !important;
+        min-width: 36px !important;
+        height: 36px !important;
+    }
+}
+
+/* ITALIC_TO_PARENTHESES_UI_V4 END */
