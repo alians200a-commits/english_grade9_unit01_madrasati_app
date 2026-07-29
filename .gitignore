@@ -1,0 +1,9 @@
+.vscode/
+.idea/
+.backups/
+node_modules/
+*.zip
+*.bak
+*.tmp
+Thumbs.db
+.DS_Store

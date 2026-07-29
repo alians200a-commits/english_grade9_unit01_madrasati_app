@@ -1,0 +1,8 @@
+بعد إنشاء مستودع فارغ في GitHub افتح Terminal داخل هذا المجلد ثم نفذ:
+
+git remote add origin رابط-المستودع
+git branch -M main
+git push -u origin main
+
+بعد الرفع:
+Settings > Pages > Source > GitHub Actions
